@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: raghu-portfolio
+    env: static
+    staticPublishPath: .
+    branch: main
+    buildCommand: ""
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
