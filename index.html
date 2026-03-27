@@ -1721,7 +1721,7 @@ ul {
                     <div class="contact-item">
                         <i class="fas fa-envelope large-icon"></i>
                         <span class="social-label">Email</span>
-                        <a href="/cdn-cgi/l/email-protection#b5c7d4d2ddc0c1d4d8dcd987858582f5d2d8d4dcd99bd6dad8" class="contact-value"><span class="__cf_email__" data-cfemail="433122242b3637222e2a2f7173737403242e222a2f6d202c2e">[email&#160;protected]</span></a>
+                        <a href="mailto:raghutamil2007@gmail.com" class="contact-value">raghutamil2007@gmail.com</a>
                     </div>
 
                     <div class="contact-item">
@@ -1768,7 +1768,7 @@ ul {
         <div id="caption"></div>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script> // Firebase Realtime Database REST endpoint
+    <script> // Firebase Realtime Database REST endpoint
 const FIREBASE_URL = "https://portfoliobackend-510ef-default-rtdb.firebaseio.com/feedback.json";
 
 // Modal functionality for certificate viewing
@@ -1840,3 +1840,17 @@ document.getElementById("feedbackForm").addEventListener("submit", async functio
         setTimeout(() => {
             status.textContent = "";
         }, 5000);
+
+    } catch (error) {
+        console.error("Firebase error:", error);
+        status.textContent = "TRANSMISSION FAILED: " + (error.message || "Unknown error");
+        status.style.color = "red";
+    }
+});</script>
+</body>
+
+</html>
+
+
+
+
